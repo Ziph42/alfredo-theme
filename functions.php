@@ -279,6 +279,14 @@ add_filter('template_include', function ($template) {
 });
 
 
+// Footer wave effect only on Home and About
+add_filter('body_class', function ($classes) {
+    if (is_front_page() || is_page('about') || is_page_template('template-about.php')) {
+        $classes[] = 'has-footwaves';
+    }
+    return $classes;
+});
+
 // ---------- Contact form ----------
 add_action('init', function () {
     register_post_type('ap_message', [

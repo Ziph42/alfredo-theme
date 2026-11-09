@@ -381,6 +381,7 @@
 
 /* Soft wavy gradient rising from the bottom as you reach the footer */
 (function(){
+  if(!document.body.classList.contains('has-footwaves'))return;
   var NS='http://www.w3.org/2000/svg',reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
   var wrap=document.createElement('div');wrap.id='footWaves';wrap.setAttribute('aria-hidden','true');
   wrap.innerHTML='<svg viewBox="0 0 1440 400" preserveAspectRatio="none"><defs>'+
