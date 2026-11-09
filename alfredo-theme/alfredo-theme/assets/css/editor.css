@@ -1,8 +1,0 @@
-/* Block editor styling: dark like the site, with the brand fonts, so editing feels closer to the real page. */
-body{background:#141718;color:#d9d0c0;font-family:"area-normal","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;line-height:1.6}
-h1,h2,h3,h4,.wp-block-post-title,.editor-post-title__input{font-family:"neue-haas-grotesk-display","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:-.02em;line-height:.95;color:#fff}
-.wp-block-post-title,.editor-post-title__input{font-size:clamp(40px,6vw,96px)}
-a{color:#F0645A}
-img{border-radius:6px}
-.block-editor-default-block-appender__content,.block-editor-block-list__empty-block-inserter,[data-rich-text-placeholder]::after{color:#8a8580}
-::selection{background:#DA3832;color:#fff}
