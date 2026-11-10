@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) { exit; }
 get_header();
 $slug = get_post_field('post_name', get_queried_object_id());
 $intro = [
-    'graphic-design' => 'Presentations, infographics, icons and campaigns for companies that ship. Click any piece to see it larger.',
+    'graphic-design' => 'Presentations, infographics, icons and campaigns for companies that ship. Click any piece to see the full project.',
     'animation'      => 'Motion graphics, training and product videos. Click a card to play.',
 ];
 $text = has_excerpt() ? get_the_excerpt() : (isset($intro[$slug]) ? $intro[$slug] : '');

@@ -130,9 +130,9 @@ body.menu-open{overflow:hidden}
 @media (prefers-reduced-motion:reduce){#menu,#menu.on{transition:none}#menu .big a,#menu .side{transition:none}}
 
 /* Gallery + blog pages */
-.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:5vh}
+.head{display:flex;flex-direction:column;align-items:flex-start;gap:18px;margin-bottom:5vh}
 .head h1{font-size:clamp(48px,9vw,140px);font-weight:700;color:var(--paper)}
-.head p{max-width:34ch;color:#b8b0a4;line-height:1.5}
+.head p{max-width:52ch;color:#b8b0a4;line-height:1.5}
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:4vh}
 .filters button{font:700 12px var(--body);letter-spacing:.1em;text-transform:uppercase;padding:9px 16px;border-radius:999px;border:1px solid #4a5256;color:#b8b0a4}
 .filters button.on{background:var(--cream);color:var(--ink);border-color:var(--cream)}
