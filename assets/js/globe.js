@@ -20,7 +20,7 @@ function slerp(a,b,t){var d=Math.acos(Math.max(-1,Math.min(1,a[0]*b[0]+a[1]*b[1]
 function draw(now){
   var t=(now-t0)/1000, fade=Math.min(1,prog/.08)*(1-Math.max(0,(prog-.9)/.1));
   ctx.setTransform(D,0,0,D,0,0);ctx.clearRect(0,0,W,H);if(fade<=0)return;
-  lam=(-60+prog*150+(reduce?0:t*2))*Math.PI/180;cl=Math.cos(lam);sl=Math.sin(lam);
+  lam=(-60+(reduce?0:t*6))*Math.PI/180;cl=Math.cos(lam);sl=Math.sin(lam);
   ctx.globalAlpha=fade;
   /* atmosphere */
   var g=ctx.createRadialGradient(CX,CY,R*.9,CX,CY,R*1.25);g.addColorStop(0,'rgba(218,56,50,.0)');g.addColorStop(.28,'rgba(218,56,50,.18)');g.addColorStop(1,'rgba(218,56,50,0)');
